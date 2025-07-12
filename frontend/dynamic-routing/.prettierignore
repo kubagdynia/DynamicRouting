@@ -1,0 +1,16 @@
+node_modules
+dist
+tmp
+.husky/*
+.github/*
+.vscode/*
+.idea/
+.history
+.editorconfig
+.prettierignore
+.gitignore
+.releaserc
+*.ico
+*.md
+*.json1
+*.conf

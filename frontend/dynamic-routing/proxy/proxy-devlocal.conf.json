@@ -1,0 +1,13 @@
+{
+    "api/myapp": {
+        "target": "http://localhost:5111",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug"
+    },
+    "api/identity": {
+        "target": "http://secure-identity-server:5000",
+        "secure": false,
+        "changeOrigin": true
+    }
+}
