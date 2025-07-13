@@ -1,0 +1,41 @@
+.error-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+  align-items: center;
+}
+.error-banner {
+  background: #fbeaea;
+  color: #a32121;
+  border: 1px solid #c45a5a;
+  border-radius: 1em;
+  padding: 1em 2.5em 1em 1em;
+  min-width: 280px;
+  max-width: 480px;
+  box-shadow: 0 4px 16px #a3212117;
+  font-weight: 500;
+  position: relative;
+  font-size: 1.08em;
+  z-index: 9999;
+  animation: error-fadein 0.7s cubic-bezier(0.42, 0, 0.58, 1.03);
+}
+.error-close {
+  background: none;
+  border: none;
+  color: #a32121;
+  font-size: 1.4em;
+  position: absolute;
+  top: 0.4em;
+  right: 0.9em;
+  cursor: pointer;
+}
+@keyframes error-fadein {
+  from {
+    opacity: 0;
+    transform: translateY(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

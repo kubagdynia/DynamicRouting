@@ -1,0 +1,6 @@
+<div *ngIf="errors().length" class="error-list">
+  <div *ngFor="let error of errors()" class="error-banner">
+    {{ error }}
+    <button (click)="close(error)" class="error-close">×</button>
+  </div>
+</div>

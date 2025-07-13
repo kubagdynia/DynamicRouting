@@ -4,15 +4,17 @@ import { ConfigResolverService } from './core/services/config-resolver.service';
 import { FrontConfigModel } from './shared/models/front-config.model';
 import { routes } from './app.routes';
 import { SidebarComponent } from './features/sidebar/sidebar.component';
+import { GlobalErrorComponent } from './shared/components/global-error/global-error.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, SidebarComponent],
+  imports: [RouterOutlet, SidebarComponent, GlobalErrorComponent],
   template: `
     <div style="display:flex;">
       <app-sidebar></app-sidebar>
       <main style="flex:1;padding:2rem;">
+        <app-global-error></app-global-error>
         <router-outlet></router-outlet>
       </main>
     </div>
