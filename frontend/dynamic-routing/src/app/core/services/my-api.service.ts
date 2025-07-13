@@ -29,19 +29,19 @@ export class MyApiService {
         },
         {
           code: 'import2',
-          label: 'Import that is not verified',
+          label: 'IMPORT.LABEL2',
           routerLink: '/c2',
           synchronizationEnabled: false,
         },
         {
           code: 'import3',
-          label: 'What is this import for?',
+          label: 'IMPORT.LABEL3',
           routerLink: '/c3',
           synchronizationEnabled: false,
         },
         {
           code: 'import4',
-          label: 'Import or not import, that is the question',
+          label: 'IMPORT.LABEL4',
           routerLink: '/c4',
           synchronizationEnabled: false,
         },

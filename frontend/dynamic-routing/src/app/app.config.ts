@@ -9,6 +9,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { provideHttpClient } from '@angular/common/http';
 import { NzNotificationService } from 'ng-zorro-antd/notification';
 import { NZ_DATE_CONFIG } from 'ng-zorro-antd/i18n';
+import { provideTranslate } from './translate.provider';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -29,6 +30,7 @@ export const appConfig: ApplicationConfig = {
       TranslateModule.forRoot(),
     ),
     provideHttpClient(),
+    provideTranslate(),
     NzNotificationService,
     { provide: NZ_DATE_CONFIG, useValue: { firstDayOfWeek: 1 } }, // Monday as the first day of the week
   ],

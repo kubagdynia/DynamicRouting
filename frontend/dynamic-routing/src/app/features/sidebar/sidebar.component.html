@@ -9,14 +9,14 @@
           class="sidebar-link main-link"
         >
           <span class="sidebar-icon">🏠</span>
-          Main page
+          {{ 'MAIN.MAIN_PAGE' | translate }}
         </a>
       </li>
       <li *ngFor="let item of menuItems$ | async">
         <a [routerLink]="item.routerLink" routerLinkActive="active-link" class="sidebar-link">
           <span class="sidebar-icon">🔗</span>
-          {{ item.label }}
-          <span *ngIf="item.synchronizationEnabled" class="sidebar-badge">sync</span>
+          {{ item.label | translate }}
+          <span *ngIf="item.synchronizationEnabled" class="sidebar-badge">{{ 'MAIN.SYNC' | translate }}</span>
         </a>
       </li>
     </ul>

@@ -1,0 +1,18 @@
+{
+  "MAIN": {
+    "TITLE": "Moja aplikacja Angular",
+    "CHOOSE_IMPORT": "Wybierz import",
+    "MAIN_PAGE": "Strona główna",
+    "SYNC": "sync"
+  },
+  "IMPORT": {
+    "CODE": "Kod",
+    "LABEL": "Etykieta",
+    "SYNCHRONIZED": "✔ zsynchronizowane",
+    "NOT_SYNCED": "✖ niezsynchronizowane",
+    "SYNC": "Sync",
+    "LABEL2": "Import, który nie jest zweryfikowany",
+    "LABEL3": "Po co ten import?",
+    "LABEL4": "Importować czy nie importować, oto jest pytanie"
+  }
+}

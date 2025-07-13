@@ -1,0 +1,18 @@
+{
+  "MAIN": {
+    "TITLE": "My Angular Application",
+    "CHOOSE_IMPORT": "Choose an Import",
+    "MAIN_PAGE": "Main page",
+    "SYNC": "sync"
+  },
+  "IMPORT": {
+    "CODE": "Code",
+    "LABEL": "Label",
+    "SYNCHRONIZED": "✔ synchronized",
+    "NOT_SYNCED": "✖ not synced",
+    "SYNC": "Sync",
+    "LABEL2": "Import that is not verified",
+    "LABEL3": "What is this import for?",
+    "LABEL4": "Import or not import, that is the question"
+  }
+}

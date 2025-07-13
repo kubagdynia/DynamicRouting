@@ -1,24 +1,24 @@
 <div class="import-box">
   <div class="import-header">
     <span class="import-icon">🔗</span>
-    <span class="import-title">{{ label$ | async }}</span>
+    <span class="import-title">{{ label$ | async | translate }}</span>
     <span *ngIf="synchronizationEnabled$ | async" class="import-badge">Sync</span>
   </div>
   <div class="import-row">
-    <span class="import-label">Code:</span>
+    <span class="import-label">{{ 'IMPORT.CODE' | translate }}:</span>
     <span>{{ code$ | async }}</span>
   </div>
   <div class="import-row">
-    <span class="import-label">Label:</span>
-    <span>{{ label$ | async }}</span>
+    <span class="import-label">{{ 'IMPORT.LABEL' | translate }}:</span>
+    <span>{{ label$ | async | translate }}</span>
   </div>
   <div class="import-row">
-    <span class="import-label">Sync:</span>
+    <span class="import-label"> {{ 'IMPORT.SYNC' | translate }}:</span>
     <span *ngIf="synchronizationEnabled$ | async; else notSync" style="color: #067839; font-weight: 500">
-      ✔ synchronized
+      {{ 'IMPORT.SYNCHRONIZED' | translate }}
     </span>
     <ng-template #notSync>
-      <span style="color: #b00; font-weight: 500">✖ not synced</span>
+      <span style="color: #b00; font-weight: 500">{{ 'IMPORT.NOT_SYNCED' | translate }}</span>
     </ng-template>
   </div>
 </div>

@@ -1,12 +1,13 @@
 import { AsyncPipe, NgIf } from '@angular/common';
 import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 import { map } from 'rxjs';
 
 @Component({
   selector: 'app-import',
   standalone: true,
-  imports: [AsyncPipe, NgIf],
+  imports: [AsyncPipe, NgIf, TranslateModule],
   templateUrl: './import.component.html',
   styleUrl: './import.component.css',
 })

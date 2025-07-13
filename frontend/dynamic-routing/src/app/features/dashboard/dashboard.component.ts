@@ -3,11 +3,12 @@ import { Component, inject, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ConfigResolverService } from '@app/core/services/config-resolver.service';
 import { FrontConfigModel } from '@app/shared/models/front-config.model';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [RouterModule, CommonModule],
+  imports: [RouterModule, CommonModule, TranslateModule],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css',
 })

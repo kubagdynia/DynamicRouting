@@ -1,8 +1,8 @@
-<h2 style="margin-bottom: 2rem">Choose an Import</h2>
+<h2 style="margin-bottom: 2rem">{{ 'MAIN.CHOOSE_IMPORT' | translate }}</h2>
 <div class="tiles">
   <a *ngFor="let item of frontConfig.imports" [routerLink]="item.routerLink" class="tile">
     <div class="tile-icon">🔗</div>
-    <div class="tile-label">{{ item.label }}</div>
+    <div class="tile-label">{{ item.label | translate }}</div>
     <div *ngIf="item.synchronizationEnabled" class="tile-badge">Sync</div>
   </a>
 </div>
