@@ -1,0 +1,95 @@
+.import-box {
+  max-width: 420px;
+  margin: 2.5rem auto 0;
+  background: linear-gradient(135deg, #f4f7fa 85%, #e1eaff 100%);
+  border-radius: 1.5em;
+  box-shadow:
+    0 6px 28px #0032a03a,
+    0 1.5px 9px #017bff17;
+  padding: 2.3rem 2.3rem 2rem 2.3rem;
+  border: none;
+  transition:
+    box-shadow 0.22s,
+    transform 0.15s;
+}
+.import-box:hover {
+  box-shadow:
+    0 8px 32px #0032a05a,
+    0 2px 16px #017bff25;
+  transform: translateY(-4px) scale(1.022);
+}
+.import-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.1em;
+  gap: 1.2em;
+  justify-content: flex-start;
+  position: relative;
+}
+.import-icon {
+  font-size: 2.8rem;
+  margin-right: 0.1em;
+  background: linear-gradient(120deg, #4b6cb7 45%, #182848 100%);
+  color: #fff;
+  border-radius: 50%;
+  width: 3.1rem;
+  height: 3.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px #001e1e0e;
+}
+.import-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #27488f;
+  letter-spacing: 1px;
+}
+.import-badge {
+  position: absolute;
+  top: 0.4em;
+  right: 0;
+  background: #c3efda;
+  color: #067839;
+  border-radius: 1em;
+  font-size: 0.93em;
+  padding: 0.11em 1.12em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 1px 6px #00a13c16;
+}
+.import-row {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  font-size: 1.15em;
+  margin-bottom: 1em;
+  margin-left: 0.5em;
+}
+.import-label {
+  font-weight: 500;
+  width: 90px;
+  color: #476;
+  flex-shrink: 0;
+  letter-spacing: 0.03em;
+}
+@media (max-width: 600px) {
+  .import-box {
+    padding: 1.2rem 0.7rem;
+    max-width: 97vw;
+  }
+  .import-header {
+    margin-bottom: 1.1em;
+    gap: 0.7em;
+  }
+  .import-title {
+    font-size: 1.13rem;
+  }
+  .import-row {
+    font-size: 1em;
+    margin-bottom: 0.6em;
+  }
+  .import-label {
+    width: 70px;
+  }
+}
